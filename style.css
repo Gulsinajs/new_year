@@ -19,9 +19,31 @@ body{
     position: relative;
 }
 
+.img-first{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.img-second{
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+}
+
+.img-third{
+    position: absolute;
+    left: 10px;
+    bottom: 70px;
+}
+
+.img-fourth{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .wrapper{
     width: 662px;
-    border: 1px solid red;
 }
 
 .content{
@@ -46,6 +68,20 @@ body{
     margin: 0;
 }
 
+.sign p{
+    padding: 5px 5px;
+    margin-left: 100px;
+}
+
+.sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    padding-top: 90px;
+}
 /*900 + 20 + 10 +6 = 900 - 36*/
 
 /*height/width = padding+margin+border+height/width*/
