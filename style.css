@@ -11,7 +11,7 @@
 body{
     background-color: #1A5B35;
     margin: 0;
-    height: 100vh;
+    height: 1000px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -30,20 +30,34 @@ body{
     left: 0;
 }
 
-.img-third{
-    position: absolute;
-    left: 10px;
-    bottom: 70px;
-}
-
 .img-fourth{
     position: absolute;
     top: 0;
     right: 0;
 }
 
+.music{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+    position: absolute;
+    left: 10px;
+    bottom: 70px;
+}
+
+.tune{
+    font-size: 12px;
+    line-height: 11px;
+    color: #fff;
+}
+
 .wrapper{
-    width: 662px;
+    width: 576px;
+    height: 785px;
 }
 
 .content{
@@ -82,7 +96,17 @@ body{
 .logo img{
     padding-top: 90px;
 }
-/*900 + 20 + 10 +6 = 900 - 36*/
 
-/*height/width = padding+margin+border+height/width*/
-/*до 576px*/
+@media (max-width: 576px){
+    .content h1{
+        font-size: 30px;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .music{
+        position: absolute;
+        left: 80%;
+        bottom: 85%;
+    }
+}
